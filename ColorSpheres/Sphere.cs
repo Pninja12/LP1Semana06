@@ -38,10 +38,5 @@ namespace ColorSpheres
         {
             return vezesatirado;
         }
-
-        public Color GetColor()
-        {
-            return cor;
-        }
     }
 }

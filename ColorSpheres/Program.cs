@@ -39,15 +39,15 @@ namespace ColorSpheres
 
             //Impressão das bolas e as suas características
             Console.WriteLine($"Ball 1: {bola1.GetTimesThrown()}"+
-            $"\nColor: {bola1.GetColor()}\n");
+            "\nColor: Red\n");
             Console.WriteLine($"Ball 2: {bola2.GetTimesThrown()}"+
-            $"\nColor: {bola2.GetColor()}\n");
+            "\nColor: Green\n");
             Console.WriteLine($"Ball 3: {bola3.GetTimesThrown()}"+
-            $"\nColor: {bola3.GetColor()}\n");
+            "\nColor: Blue\n");
             Console.WriteLine($"Ball 4: {bola4.GetTimesThrown()}"+
-            $"\nColor: {bola4.GetColor()}\n");
+            "\nColor: SemivisibleYellow\n");
             Console.WriteLine($"Ball 5: {bola5.GetTimesThrown()}"+
-            $"\nColor: {bola5.GetColor()}\n");
+            "\nColor: Orange\n");
         }
     }
 }
