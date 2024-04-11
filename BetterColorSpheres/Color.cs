@@ -12,55 +12,17 @@ namespace ColorSpheres
     /// </summary>
     public class Color
     {
-        private byte red;
-        private byte green;
-        private byte Blue;
-        private byte alpha;
+        private byte red{ get; set; };
+        private byte green{ get; set; };
+        private byte blue{ get; set; };
+        private byte alpha{ get; set; };
 
-        public byte Red()
+        public Color(byte red, byte green,byte blue,byte alpha = 255)
         {
-            get
-            {
-                return red;
-            }
-            set
-            {
-                red = value;
-            }
-        }
-        public byte Green()
-        {
-            get
-            {
-                return green;
-            }
-            set
-            {
-                green = value;
-            }
-        }
-        public byte Blue()
-        {
-            get
-            {
-                return Blue;
-            }
-            set
-            {
-                blue = value;
-            }
-        }
-
-        public byte Alpha()
-        {
-            get
-            {
-                return alpha;
-            }
-            set
-            {
-                alpha = value;
-            }
+            this.red = red;
+            this.green = green;
+            this.blue = blue;
+            this.alpha = alpha;
         }
 
         public byte GetGrey()

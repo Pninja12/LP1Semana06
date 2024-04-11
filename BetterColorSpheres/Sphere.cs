@@ -10,7 +10,6 @@ namespace ColorSpheres
     /// </summary>
     public class Sphere
     {
-        private readonly Color cor;
         private int raio;
         private int vezesatirado;
 
@@ -19,6 +18,14 @@ namespace ColorSpheres
             this.cor = cor;
             this.raio = raio;
             vezesatirado = 0;
+        }
+
+        public Color cor
+        {
+            get
+            {
+                return cor;
+            }
         }
 
         public void Pop()
@@ -37,6 +44,17 @@ namespace ColorSpheres
         public int GetTimesThrown()
         {
             return vezesatirado;
+        }
+
+        public int GetRaio()
+        {
+            return raio;
+        }
+        public string GetCor()
+        {
+            string texto = $"({cor.GetRed()},{cor.GetGreen()},"
+            +$"{cor.GetBlue()},{cor.GetAlpha()})";
+            return texto;
         }
     }
 }
