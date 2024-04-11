@@ -38,16 +38,26 @@ namespace ColorSpheres
             bola5.Throw();
 
             //Impressão das bolas e as suas características
-            Console.WriteLine($"Ball 1: {bola1.GetTimesThrown()}"+
-            "\nColor: Red\n");
-            Console.WriteLine($"Ball 2: {bola2.GetTimesThrown()}"+
-            "\nColor: Green\n");
-            Console.WriteLine($"Ball 3: {bola3.GetTimesThrown()}"+
-            "\nColor: Blue\n");
-            Console.WriteLine($"Ball 4: {bola4.GetTimesThrown()}"+
-            "\nColor: SemivisibleYellow\n");
-            Console.WriteLine($"Ball 5: {bola5.GetTimesThrown()}"+
-            "\nColor: Orange\n");
+            Console.WriteLine($"characterísticas da 1ª bola:");
+            Console.WriteLine($"Raio: {bola1.GetRaio()}");
+            Console.WriteLine($"Vezes atirada: {bola1.GetTimesThrown()}");
+            Console.WriteLine($"Cor: {bola1.GetCor()}\n");
+            Console.WriteLine($"characterísticas da 2ª bola:");
+            Console.WriteLine($"Raio: {bola2.GetRaio()}");
+            Console.WriteLine($"Vezes atirada: {bola2.GetTimesThrown()}");
+            Console.WriteLine($"Cor: {bola2.GetCor()}\n");
+            Console.WriteLine($"characterísticas da 3ª bola:");
+            Console.WriteLine($"Raio: {bola3.GetRaio()}");
+            Console.WriteLine($"Vezes atirada: {bola3.GetTimesThrown()}");
+            Console.WriteLine($"Cor: {bola3.GetCor()}\n");
+            Console.WriteLine($"characterísticas da 4ª bola:");
+            Console.WriteLine($"Raio: {bola4.GetRaio()}");
+            Console.WriteLine($"Vezes atirada: {bola4.GetTimesThrown()}");
+            Console.WriteLine($"Cor: {bola4.GetCor()}\n");
+            Console.WriteLine($"characterísticas da 5ª bola:");
+            Console.WriteLine($"Raio: {bola5.GetRaio()}");
+            Console.WriteLine($"Vezes atirada: {bola5.GetTimesThrown()}");
+            Console.WriteLine($"Cor: {bola5.GetCor()}\n");
         }
     }
 }

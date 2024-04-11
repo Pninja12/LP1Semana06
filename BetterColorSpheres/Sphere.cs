@@ -38,16 +38,5 @@ namespace ColorSpheres
         {
             return vezesatirado;
         }
-
-        public int GetRaio()
-        {
-            return raio;
-        }
-        public string GetCor()
-        {
-            string texto = $"({cor.GetRed()},{cor.GetGreen()},"
-            +$"{cor.GetBlue()},{cor.GetAlpha()})";
-            return texto;
-        }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ColorSpheres
 {
     /// <summary>
-    /// Classe que criar cores, recebendo de 0 a 255 o vermelho, verde, azul
+    /// Classe que cria cores, recebendo de 0 a 255 o vermelho, verde, azul
     /// e, caso seja necessário, a sua transparência
     /// </summary>
     public class Color
