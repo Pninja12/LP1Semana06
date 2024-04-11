@@ -5,6 +5,11 @@ using System.Threading.Tasks;
 
 namespace PlayerStats
 {
+    /// <summary>
+    /// Classe que cria um perfil para um jogador, com o seu nome, vezes jogadas
+    /// , vezes que ganhou, a sua percentagem de vitórias e a sua pontuação mais
+    /// alta
+    /// </summary>
     public class Player
     {
         float highScore;
@@ -12,6 +17,9 @@ namespace PlayerStats
         int wonGames;
         public string Name{ get; }
 
+        /// <summary>
+        /// A sua melhor pontuação
+        /// </summary>
         public float HighScore
         {
             get
@@ -24,6 +32,10 @@ namespace PlayerStats
                     highScore = value;
             }
         }
+
+        /// <summary>
+        /// A sua percentagem de vitórias
+        /// </summary>
         public float WinRate
         {
             get
@@ -39,6 +51,10 @@ namespace PlayerStats
             }
         }
 
+        /// <summary>
+        /// Indica que jogou um jogo
+        /// </summary>
+        /// <param name="win">Verifica se ganhou</param>
         public void PlayGame(bool win)
         {
             playedGames += 1;
