@@ -1,8 +1,7 @@
 ```mermaid
 classDiagram
-    Color <|-- Color
-    Sphere <|-- Sphere
-    Program <|-- Program
+    Color <--* Sphere
+    Sphere <-- Program
     class Color{
     -byte red
     -byte green
@@ -16,11 +15,16 @@ classDiagram
     +byte GetGrey()
     }
     class Sphere{
-      +String beakColor
-      +swim()
-      +quack()
+      -int raio
+      -int  vezesatirado
+      -Color cor
+      +Sphere()
+      +Color cor()
+      +Pop()
+      +Throw()
+      +int GetTimesThrown()
+      +int GetRaio()
+      +string GetCor()
     }
     class Program{
-      -int sizeInFeet
-      -canEat()
     }
