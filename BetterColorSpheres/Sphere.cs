@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     /// <summary>
     /// Classe que cria bolas, recebendo a sua cor e o seu raio
@@ -12,6 +12,7 @@ namespace ColorSpheres
     {
         private int raio;
         private int vezesatirado;
+        private Color cor;
 
         public Sphere(Color cor, int raio)
         {
@@ -20,7 +21,7 @@ namespace ColorSpheres
             vezesatirado = 0;
         }
 
-        public Color cor
+        public Color Cor
         {
             get
             {
@@ -52,8 +53,8 @@ namespace ColorSpheres
         }
         public string GetCor()
         {
-            string texto = $"({cor.GetRed()},{cor.GetGreen()},"
-            +$"{cor.GetBlue()},{cor.GetAlpha()})";
+            string texto = $"({cor.Red},{cor.Green},"
+            +$"{cor.Blue},{cor.Alpha})";
             return texto;
         }
     }

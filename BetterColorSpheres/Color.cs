@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     /// <summary>
     /// Classe que cria cores, recebendo de 0 a 255 o vermelho, verde, azul
@@ -12,10 +12,10 @@ namespace ColorSpheres
     /// </summary>
     public class Color
     {
-        private byte red{ get; set; };
-        private byte green{ get; set; };
-        private byte blue{ get; set; };
-        private byte alpha{ get; set; };
+        public byte red;
+        private byte green;
+        private byte blue;
+        private byte alpha;
 
         public Color(byte red, byte green,byte blue,byte alpha = 255)
         {
@@ -24,6 +24,11 @@ namespace ColorSpheres
             this.blue = blue;
             this.alpha = alpha;
         }
+
+        public byte Red{get; set; }
+        public byte Green{get; set; }
+        public byte Blue{get; set; }
+        public byte Alpha{get; set; }
 
         public byte GetGrey()
         {
