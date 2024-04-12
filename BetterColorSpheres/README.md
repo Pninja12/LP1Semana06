@@ -1,22 +1,26 @@
 ```mermaid
 classDiagram
-    Animal <|-- Duck
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
+    Color <|-- Color
+    Sphere <|-- Sphere
+    Program <|-- Program
+    class Color{
+    -byte red
+    -byte green
+    -byte blue
+    -byte alpha
+    +Color()
+    +byte Red()
+    +byte Green()
+    +byte Blue()
+    +byte Alpha()
+    +byte GetGrey()
+    }
+    class Sphere{
       +String beakColor
       +swim()
       +quack()
     }
-    class Fish{
+    class Program{
       -int sizeInFeet
       -canEat()
-    }
-    class Zebra{
-      +bool is_wild
-      +run()
     }

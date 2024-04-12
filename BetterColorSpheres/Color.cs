@@ -12,7 +12,7 @@ namespace BetterColorSpheres
     /// </summary>
     public class Color
     {
-        public byte red;
+        private byte red;
         private byte green;
         private byte blue;
         private byte alpha;
